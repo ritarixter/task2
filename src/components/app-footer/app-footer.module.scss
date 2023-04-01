@@ -1,0 +1,187 @@
+@import "../../scss/variables.scss";
+.footer {
+  margin-bottom: auto;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &_contacts {
+    align-items: flex-end;
+    height: auto;
+  }
+
+  &_contacts &__item {
+    margin-right: 0px;
+  }
+  &__item {
+    margin-right: 52px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.menu {
+  margin-left: 46px;
+}
+
+.icons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    margin-right: 12px;
+    transition: opacity 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: auto;
+}
+
+.address {
+  color: $primary;
+  font-style: normal;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $fontFamilyPrimary;
+  color: $secondary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.link,
+.phone {
+  text-decoration: none;
+  color: $primary;
+  transition: opacity 0.1s ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.copyright {
+  font-family: $fontFamilyPrimary;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $primary;
+  text-align: right;
+
+  &__link {
+    color: $primary;
+  }
+
+  &__paragraph {
+    margin: 70px 0 5px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  .contacts {
+    margin-left: 0;
+    align-items: start;
+  }
+
+  .list {
+    height: auto;
+    max-height: 150px;
+    &_contacts {
+      align-items: flex-start;
+      max-height: none;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+  }
+
+  .title {
+    margin-top: 30px;
+  }
+
+  .copyright {
+    text-align: left;
+    &__paragraph {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 6px 16px 60px;
+    background-color: $bgColor;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .menu .list {
+    max-height: 160px;
+  }
+
+  .list {
+    max-height: none;
+    &__item {
+      font-size: 14px;
+      line-height: 17px;
+      max-width: 124px;
+    }
+  }
+
+  .contacts .list__item {
+    max-width: none;
+  }
+  .phone {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .address {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
