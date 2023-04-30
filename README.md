@@ -1,7 +1,7 @@
 ## Тестовое задание 2
 
-Верстка по [макету](https://www.figma.com/file/rgIenOj7gWLP21Yi7UJZ0G/Welbex-(Copy)?node-id=0-1&t=I7wvlQ4B2giNqE9k-0)
-[Cсылка на сайт](https://task2-omega.vercel.app/)
+- Верстка по [макету](https://www.figma.com/file/rgIenOj7gWLP21Yi7UJZ0G/Welbex-(Copy)?node-id=0-1&t=I7wvlQ4B2giNqE9k-0)
+- [Cсылка на сайт](https://task2-omega.vercel.app/)
 
 ## Сборка проекта
 
